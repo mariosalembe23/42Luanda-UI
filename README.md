@@ -34,4 +34,4 @@ Sinta-se a vontade para contribuir no projecto com alguma ideia que pode ser apl
 
 ## SIGA-ME
 - INSTAGRAM: [Instragram](https://www.instagram.com/mariosalembe22)
-- LINKEDIN: [Instragram](https://www.linkedin.com/in/m%C3%A1rio-salembe-5211792a6/)
+- LINKEDIN: [LINKEDIN](https://www.linkedin.com/in/m%C3%A1rio-salembe-5211792a6/)
