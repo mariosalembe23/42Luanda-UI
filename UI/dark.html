@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TAILWIND CUSTOMIZED -->
+    <link rel="stylesheet" href="./assets/css/dark.css" />
+    <!-- PAGEDONE -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css"
+    />
+    <script src="./assets/js/tailwind.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>42 Luanda - UI</title>
+  </head>
+  <body class="bg-black">
+    <header class="w-full header_container">
+      <div class="w-full h-full bg-gradient-to-b from-transparent to-black">
+        <header
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="navbar px-5 py-2 w-full bg-transparent transition-all fixed top-0 left-0 right-0 z-30 flex items-center justify-between"
+        >
+          <div>
+            <img
+              src="./assets/img/logotype-42-white.png"
+              class="w-28"
+              alt="imagem-logotipo-42"
+            />
+          </div>
+          <div class="paisagem-tablet:inline-flex hidden">
+            <nav>
+              <ul class="flex items-center gap-8 desktop:gap-12">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="font-semibold transition-all text-white hover:text-zinc-400"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#topicos"
+                    class="font-semibold transition-all text-white hover:text-zinc-400"
+                    >Tópicos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#curriculum"
+                    class="font-semibold transition-all text-white hover:text-zinc-400"
+                    >Curriculum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#feedback"
+                    class="font-semibold transition-all text-white hover:text-zinc-400"
+                    >Feedback</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#faq"
+                    class="font-semibold transition-all text-white hover:text-zinc-400"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <a
+              href="./src/register.html"
+              class="p-5 rounded-lg border retrato-tablet:flex hidden border-zinc-900 retrato-tablet:w-auto w-[90%] retrato-tablet:justify-start justify-center bg-zinc-950 text-white items-center transition-all hover:border-white text-[15px] gap-2 py-2.5 font-medium"
+            >
+              Entrar
+
+            </a>
+            <button
+              id="showOffCanvas"
+              class="text-white w-10 h-10  retrato-tablet:hidden flex items-center justify-center rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div id="inicio" class="w-full" data-aos="fade-up" data-aos-duration="1500">
+          <section
+            class="large:pt-40 pt-32 pb-12 px-4 max-w-5xl text-center m-auto w-full"
+          >
+            <div>
+              <a
+                href="#"
+                class="inline-flex font-medium items-center text-white text-[15px] gap-2 px-4 py-2 rounded-full border border-zinc-800 hover:border-zinc-400 transition-all"
+                >Visite nossas redes sociais
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m0-3-3-3m0 0-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 0 1 2.25 2.25v7.5a2.25 2.25 0 0 1-2.25 2.25h-7.5a2.25 2.25 0 0 1-2.25-2.25v-.75"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h1
+              class="desktop:text-6xl retrato-tablet:text-5xl text-white small:text-4xl smaller:text-3xl retrato-tablet:font-extrabold font-semibold leading-snug desktop:leading-snug"
+            >
+              Aprenda a programar do zero de forma
+              <span
+                class="px-4 py-1 bg-gradient-to-r border-0 rounded-2xl from-transparent to-[#46a6d6da]"
+                >gratuita</span
+              >!
+            </h1>
+            <div class="max-w-4xl w-full m-auto">
+              <p class="retrato-tablet:text-xl pt-3 text-white">
+                Esta é a tua porta para o futuro! Torna-te um profissional de
+                programação disputado pelas melhores empresas.
+              </p>
+            </div>
+            <div
+              class="flex retrato-tablet:flex-row flex-col items-center mt-5 justify-center gap-y-3 retrato-tablet:gap-5"
+            >
+              <a
+                href="./src/register.html"
+                class="p-5 rounded-lg border border-zinc-900 retrato-tablet:w-auto w-[90%] retrato-tablet:justify-start justify-center bg-zinc-950 text-white items-center transition-all hover:border-white flex gap-2 py-3 font-medium"
+              >
+                Iniciar agora
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/42luanda/"
+                class="px-5 py-3 rounded-lg retrato-tablet:w-auto w-[90%] border-zinc-900 retrato-tablet:justify-start justify-center flex items-center gap-2 transition-all hover:bg-white hover:border-white hover:text-black text-[15px] text-white border font-semibold"
+              >
+                Guia
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </section>
+          <section
+            class="paisagem-tablet:px-4 px-4 max-w-7xl grid w-full m-auto retrato-tablet:grid-cols-2 grid-cols-1 paisagem-tablet:grid-cols-4 gap-5"
+          >
+            <div class="p-5 rounded-lg shadow-md bg-[#060607] border border-zinc-900">
+              <header>
+                <div class="text-purple-700 w-12 h-12 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </div>
+              </header>
+              <div>
+                <h2 class="font-semibold text-white">
+                  Sem horários, no teu tempo.
+                </h2>
+                <p class="text-[14px] text-zinc-100 pt-4 pb-3">
+                  Aberta 24h por dia, 7 dias por semana, permite definires o teu
+                  ritmo e o teu percurso, consoante a tua disponibilidade e os
+                  teus interesses.
+                </p>
+              </div>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-[#060607] border border-zinc-900">
+              <header>
+                <div class="text-orange-700 w-12 h-12 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                    />
+                  </svg>
+                </div>
+              </header>
+              <div>
+                <h2 class="font-semibold text-white">Aprendes a aprender.</h2>
+                <p class="text-[14px] text-zinc-100 pt-4 pb-3">
+                  Método presencial que abrange linguagens fundamentais de
+                  programação, começando com C. Com uma base sólida e profunda.
+                </p>
+              </div>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-[#060607] border border-zinc-900">
+              <header>
+                <div class="text-green-700 w-12 h-12 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+                    />
+                  </svg>
+                </div>
+              </header>
+              <div>
+                <h2 class="font-semibold text-white">
+                  Aprendizagem divertida. Programação a sério.
+                </h2>
+                <p class="text-[14px] text-zinc-100 pt-4 pb-3">
+                  Desenvolva habilidades de resolução de problemas, com
+                  criatividade, determinação e trabalho em equipa.
+                </p>
+              </div>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-[#060607] border border-zinc-900">
+              <header>
+                <div class="text-indigo-700 w-12 h-12 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                </div>
+              </header>
+              <div>
+                <h2 class="font-semibold text-white">
+                  Porta aberta para o mercado de trabalho.
+                </h2>
+                <p class="text-[14px] text-zinc-100 pt-4 pb-3">
+                  A partir de 18 meses de formação, os alunos podem participar
+                  em projectos de programação em empresas parceiras da 42
+                  Luanda.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main class="mt-12 w-full pt-7">
+      <section
+        class="w-full mb-20"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <div class="w-full bg-[#060607] py-6 flex justify-center items-center">
+          <div class="grid retrato-tablet:grid-cols-4 grid-cols-2 max-w-6xl m-auto w-full gap-12">
+            <div class="flex gap-2 flex-col items-center justify-center">
+              <h3 class="text-zinc-100 text-3xl font-bold">100+</h3>
+              <p class="text-white">Estudantes</p>
+            </div>
+            <div class="flex gap-2 flex-col items-center justify-center">
+              <h3 class="text-cyan-500 text-3xl font-bold">99+</h3>
+              <p class="text-cyan-500">Pisciners</p>
+            </div>
+            <div class="flex gap-2 flex-col items-center justify-center">
+              <h3 class="text-zinc-100 text-3xl font-bold">7</h3>
+              <p class="text-white">Áreas</p>
+            </div>
+            <div class="flex gap-2 flex-col items-center justify-center">
+              <h3 class="text-3xl font-bold text-cyan-500">30%</h3>
+              <p class="text-cyan-500">Mulheres</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- IMAGES -->
+
+      <section class="w-full mb-20">
+        <div
+          class="max-w-5xl w-full m-auto justify-center retrato-tablet:gap-2 gap-1 flex retrato-tablet:flex-row flex-col items-center"
+        >
+          <div
+            class="cart bg-[url('./assets/img/ilustration3.jpg')] h-80 paisagem-tablet:w-80 w-full"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="w-full p-5 h-full flex items-end bg-[rgba(0,0,0,0.5)]">
+              <div>
+                <h3 class="text-white font-medium pb-2">Trabalho em Equipa</h3>
+                <small class="text-white">
+                  Trabalho em equipa para o desenvolvimento coletivo e
+                  interpessoal!
+                </small>
+              </div>
+            </div>
+          </div>
+          <div
+            class="cart bg-[url('./assets/img/ilustration2.jpg')] h-80 paisagem-tablet:w-96 w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="w-full p-5 h-full flex items-end bg-[rgba(0,0,0,0.5)]">
+              <div>
+                <h3 class="text-white font-medium pb-2">
+                  Incitamos a Inovação
+                </h3>
+                <small class="text-white">
+                  Trabalho em equipa para o desenvolvimento coletivo e
+                  interpessoal!
+                </small>
+              </div>
+            </div>
+          </div>
+          <div
+            class="cart bg-[url('./assets/img/ilustration1.jpg')] h-80 paisagem-tablet:w-80 w-full"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <div class="w-full p-5 h-full flex items-end bg-[rgba(0,0,0,0.5)]">
+              <div>
+                <h3 class="text-white font-medium pb-2">
+                  Conhecimentos Sólidos
+                </h3>
+                <small class="text-white">
+                  Trabalho em equipa para o desenvolvimento coletivo e
+                  interpessoal!
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-w-4xl w-full px-4 m-auto text-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <hr
+            class="w-12 rounded-full mt-6 h-1 border-none bg-cyan-500 mx-auto"
+          />
+          <p class="text-white pt-5 pb-6">
+            Igresse na 42 Luanda e forme-se em áreas da programação como,
+            cybersegurança, inteligência artificial, ciência de dados,
+            programação de jogos. arquitectura de redes, desenvolvimento de
+            sites, aplicações móveis.
+          </p>
+          <div class="flex justify-center">
+            <a
+              href="./src/register.html"
+              class="p-5 rounded-lg border border-zinc-900 retrato-tablet:w-auto w-[90%] retrato-tablet:justify-start justify-center bg-zinc-950 text-white items-center transition-all hover:bg-zinc-900 flex gap-2 py-3 font-medium"
+            >
+              Começar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="topicos" class="topicos large:max-w-[89rem] max-w-7xl w-full m-auto px-4">
+        <header class="text-center" data-aos="fade-up" data-aos-duration="1000">
+          <h3
+            class="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-white text-3xl font-semibold"
+          >
+            42 Luanda
+            <span
+              class="px-4 py-1 bg-gradient-to-r from-transparent to-cyan-300 rounded-2xl"
+              >Tópicos</span
+            >
+          </h3>
+        </header>
+        <div
+          class="grid retrato-tablet:grid-cols-2 retrato-tablet:px-0 px-4 grid-cols-1 paisagem-tablet:grid-cols-3 mt-16 gap-4"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <div class="p-5 bg-black border border-zinc-950 rounded-md">
+            <header>
+              <div
+                class="inline-flex items-center justify-center rounded-md p-3 bg-zinc-950"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 stroke-cyan-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                  />
+                </svg>
+              </div>
+            </header>
+            <h5 class="pt-4 font-medium text-white">Rede Global</h5>
+            <p class="pt-4 text-zinc-100">
+              São 50 campus espalhados em 29 países, dentre elas a 42 Luanda,
+              com mais de 18.000 alunos a aprender programação e a trocar
+              experiências entre si.
+            </p>
+          </div>
+          <div class="p-5 bg-black border border-zinc-950 rounded-md">
+            <header>
+              <div
+                class="inline-flex items-center justify-center rounded-md p-3 bg-zinc-950"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 stroke-cyan-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"
+                  />
+                </svg>
+              </div>
+            </header>
+            <h5 class="pt-4 font-medium text-white">Formação Necessária</h5>
+            <p class="pt-4 text-zinc-100">
+              Não precisas de ter grau académico. Basta, teres mais de 17 anos e
+              muita vontade de aprender. A tua mudança de vida passa pela 42
+              Luanda.
+            </p>
+          </div>
+          <div class="p-5 bg-black border border-zinc-950 rounded-md">
+            <header>
+              <div
+                class="inline-flex items-center justify-center rounded-md p-3 bg-zinc-950"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 stroke-cyan-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"
+                  />
+                </svg>
+              </div>
+            </header>
+            <h5 class="pt-4 font-medium text-white">A 0 Kwanzas</h5>
+            <p class="pt-4 text-zinc-100">
+              Não há custos antes, durante ou após a formação. É totalmente
+              gratuita. O único valor que nos interessa é o teu valor.
+            </p>
+          </div>
+          <div class="p-5 bg-black border border-zinc-950 rounded-md">
+            <header>
+              <div
+                class="inline-flex items-center justify-center rounded-md p-3 bg-zinc-950"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 stroke-cyan-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002"
+                  />
+                </svg>
+              </div>
+            </header>
+            <h5 class="pt-4 font-medium text-white">Sem Professores</h5>
+            <p class="pt-4 text-zinc-100">
+              A 42 Luanda utiliza um modelo pedagógico inovador que te permite
+              aprender a programar por meio de desafios práticos e projectos em
+              grupo. Não se trata de um modelo convencional por não ter
+              professores.
+            </p>
+          </div>
+          <div class="p-5 bg-black border border-zinc-950 rounded-md">
+            <header>
+              <div
+                class="inline-flex items-center justify-center rounded-md p-3 bg-zinc-950"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 stroke-cyan-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+                  />
+                </svg>
+              </div>
+            </header>
+            <h5 class="pt-4 font-medium text-white">
+              Aprendizagem por Gamificação
+            </h5>
+            <p class="pt-4 text-zinc-100">
+              Na 42 avanças no programa ganhando pontos em cada projecto que
+              completas. Com os pontos, passas de nível e desbloqueias mais
+              projectos no currículo da 42 em diferentes áreas da programação!
+            </p>
+          </div>
+          <div class="p-5 bg-black border border-zinc-950 rounded-md">
+            <header>
+              <div
+                class="inline-flex items-center justify-center rounded-md p-3 bg-zinc-950"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 stroke-cyan-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
+                  />
+                </svg>
+              </div>
+            </header>
+            <h5 class="pt-4 font-medium text-white">Presencial é Opcional</h5>
+            <p class="pt-4 text-zinc-100">
+              A metodologia de ensino da 42 promove a interacção e o
+              desenvolvimento na aprendizagem entre pares e trabalho em grupo,
+              muito mais promissor quando feito presencialmente sendo a presença
+              obrigatória.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CURSUS -->
+      <section id="curriculum" class="w-full my-[8rem] retrato-tablet:px-4 px-5">
+        <header
+          class="text-center pb-10"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <h3
+            class="paisagem-tablet:text-5xl text-white retrato-tablet:text-4xl text-3xl font-semibold"
+          >
+            42 Curric<span
+              class="pe-4 py-1 bg-gradient-to-r from-transparent to-cyan-300 rounded-2xl"
+              >ulum</span
+            >
+          </h3>
+          <div>
+            <p class="max-w-3xl w-full m-auto py-8 text-white">
+              Estas e muitas outras são as áreas em que te podes formar na nossa
+              escola, 42 Luanda, proporcionando o melhor ambiente para o
+              aprendizado constante.
+              <a
+                href="./src/register.html"
+                class="text-cyan-700 font-semibold transition-all hover:underline"
+                >Inscreva-te</a
+              >
+              agora para saber mais!
+            </p>
+          </div>
+        </header>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="max-w-6xl border-b border-zinc-900 pb-10 m-auto paisagem-tablet:gap-y-0 gap-y-8 w-full grid retrato-tablet:grid-cols-2 grid-cols-1 paisagem-tablet:grid-cols-4 gap-3"
+        >
+          <div class="rounded-md h-80">
+            <div
+              class="w-full border-b border-zinc-900 border-x p-5 h-full flex items-end bg-gradient-to-b from-transparent"
+            >
+              <div>
+                <header>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 stroke-cyan-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"
+                    />
+                  </svg>
+                </header>
+                <div class="py-1">
+                  <small class="font-medium text-cyan-500">Human Coder</small>
+                  <h6 class="text-xl text-white font-semibold">
+                    Cybersegurança
+                  </h6>
+                </div>
+                <small class="text-white">Domine o mundo Cibernético!</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-md h-80">
+            <div
+              class="w-full border-b border-x border-zinc-900 p-5 h-full flex items-end bg-gradient-to-b from-transparent"
+            >
+              <div>
+                <header>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 stroke-cyan-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                    />
+                  </svg>
+                </header>
+                <div class="py-1">
+                  <small class="font-medium text-cyan-500">Human Coder</small>
+                  <h6 class="text-xl text-white font-semibold">
+                    Ciência de Dados
+                  </h6>
+                </div>
+                <small class="text-white"
+                  >Seja um grande Cientista de dados!</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-md h-80">
+            <div
+              class="w-full p-5 h-full flex items-end bg-gradient-to-b from-transparent to-cyan-500"
+            >
+              <div>
+                <header>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 stroke-cyan-100"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                    />
+                  </svg>
+                </header>
+                <div class="py-1">
+                  <small class="font-medium text-white">Human Coder</small>
+                  <h6 class="text-xl text-white font-semibold">
+                    Criação de Games
+                  </h6>
+                </div>
+                <small class="text-cyan-100"
+                  >Crie jogos com gráficos incríveis</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-md h-80">
+            <div
+              class="w-full border-b border-x border-zinc-900 p-5 h-full flex items-end bg-gradient-to-b from-transparent"
+            >
+              <div>
+                <header>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 stroke-cyan-600"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                    />
+                  </svg>
+                </header>
+                <div class="py-1">
+                  <small class="font-medium text-white">Human Coder</small>
+                  <h6 class="text-xl text-white font-semibold">
+                    Desenvolvimento Web
+                  </h6>
+                </div>
+                <small class="text-white"
+                  >Crie Páginas Web Impressionantes!</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="feedback" class="feedback max-w-[85rem] mt-20 w-full m-auto">
+        <header
+          class="text-center"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <h3
+            class="paisagem-tablet:text-5xl text-white retrato-tablet:text-4xl text-3xl font-semibold"
+          >
+            Feed<span
+              class="pe-4 py-1 bg-gradient-to-r from-transparent to-cyan-300 rounded-2xl"
+              >back</span
+            >
+          </h3>
+        </header>
+
+        <div
+          class="mt-12 m-auto gap-4 max-w-5xl w-full grid grid-cols-1 paisagem-tablet:px-0 px-4 retrato-tablet:grid-cols-2"
+        >
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="p-5 bg-gradient-to-b from-zinc-900 to-transparent rounded-2xl"
+          >
+            <p class="text-[15px] text-white">
+              Eu quero aprender programação para desenvolver as minhas
+              habilidades e capacidade de análise, para obter novas
+              oportunidades de carreira e maior autonomia para criar os meus
+              próprios projectos.
+            </p>
+            <div class="flex items-center gap-4 pt-6">
+              <img
+                src="./assets/img/user1.png"
+                class="w-14"
+                alt="imagem-user"
+              />
+              <div>
+                <h6 class="font-medium text-zinc-100">Jonas Simão</h6>
+                <small class="text-zinc-200">Viana</small>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="p-5 bg-gradient-to-b from-zinc-900 to-transparent rounded-2xl"
+          >
+            <p class="text-[15px] text-white">
+              Fiz o enter na 42 Luanda porque acredito que todos podemos ser
+              protagonizadores da nossa carreira e sucesso. O futuro está nas
+              nossas mãos, adquirir novas habilidades que vão impulsionar o meu
+              crescimento. O conhecimento é a chave para abrir todas as portas,
+              vamos juntos nessa jornada.
+            </p>
+            <div class="flex items-center gap-4 pt-6">
+              <img
+                src="./assets/img/user2.png"
+                class="w-14"
+                alt="imagem-user"
+              />
+              <div>
+                <h6 class="font-medium text-zinc-100">Márcia Kiteque</h6>
+                <small class="text-zinc-200">Estalagem</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+      id="faq"
+        class="FAQ paisagem-tablet:px-0 px-4 max-w-6xl mt-20 w-full m-auto"
+      >
+        <header
+          class="text-center"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <h3
+            class="paisagem-tablet:text-4xl retrato-tablet:text-3xl text-2xl text-white font-semibold"
+          >
+            Perguntas Frequentes
+          </h3>
+          <p class="pt-4 text-zinc-200">Tire suas dúvidas rapidamente aqui!</p>
+        </header>
+        <!-- ACCORDION -->
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="accordion-group mt-8"
+          data-accordion="default-accordion"
+        >
+          <div
+            class="accordion pb-4 border-b border-solid border-zinc-900"
+            id="basic-heading-one-default"
+          >
+            <button
+              class="accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600"
+              aria-controls="basic-collapse-one-default"
+            >
+              <h5 class="text-white font-medium">O que é a 42?</h5>
+              <svg
+                class="text-gray-200 transition duration-500 group-hover:text-cyan-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="basic-collapse-one-default"
+              class="accordion-content w-full px-0 overflow-hidden max-h-0 pr-4"
+              aria-labelledby="basic-heading-one-default"
+            >
+              <p class="text-white leading-6 pt-5 text-[15px]">
+                A 42 é dos melhores centros de excelência de programação do
+                mundo, em que se aprende de forma diferente assente no trabalho
+                em equipa e em projectos práticos (gamificação), em vez de uma
+                formação teórica, ganhando-se pontos e passando-se de nível,
+                como se fosse um jogo. Está aberta a todos os interessados com
+                idade igual ou superior a 17 anos, com ou sem diploma ou
+                formação prévia em programação.
+              </p>
+            </div>
+          </div>
+          <div
+            class="accordion pt-4 pb-4 border-b border-solid border-zinc-900"
+            id="basic-heading-one-default"
+          >
+            <button
+              class="accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600"
+              aria-controls="basic-collapse-one-default"
+            >
+              <h5 class="text-white font-medium">
+                A 42 Luanda não cobra propina?
+              </h5>
+              <svg
+                class="text-gray-200 transition duration-500 group-hover:text-cyan-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="basic-collapse-one-default"
+              class="accordion-content w-full px-0 overflow-hidden max-h-0 pr-4"
+              aria-labelledby="basic-heading-one-default"
+            >
+              <p class="text-white leading-6 pt-5 text-[15px]">
+                Sim, desde os processos de selecção até à conclusão da
+                aprendizagem, não existem propinas, taxas ou quaisquer outras
+                cobranças que possam inviabilizar o teu futuro. Não gastas um
+                único kwanza pois és patrocinado por empresas ou mecenas
+                comprometidos com o propósito de partilhar para evoluir.
+              </p>
+            </div>
+          </div>
+          <div
+            class="accordion pt-4 pb-4 border-b border-solid border-zinc-900"
+            id="basic-heading-one-default"
+          >
+            <button
+              class="accordion-toggle group accordion-active:text-indigo-600 inline-flex items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 active:text-indigo-600"
+              aria-controls="basic-collapse-one-default"
+            >
+              <h5 class="text-white font-medium">
+                Como ocorre o processo de seleção?
+              </h5>
+              <svg
+                class="text-gray-200 transition duration-500 group-hover:text-cyan-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="basic-collapse-one-default"
+              class="accordion-content w-full px-0 overflow-hidden max-h-0 pr-4"
+              aria-labelledby="basic-heading-one-default"
+            >
+              <p class="text-white leading-6 pt-5 text-[15px]">
+                1. Inscrição online: A tua jornada até te tornares aprendiz na
+                42 Luanda começa com uma inscrição e candidatura pelo nosso
+                site. 2. Jogos de Lógica Online: Depois de te inscreveres, e
+                aceitares os termos e condições de participação, tens de saber
+                que tens que fazer 2 jogos - online. Estes jogos foram
+                desenhados para desafiar a tua capacidade de raciocínio lógico e
+                resolução de problemas, e são o teu primeiro teste. O teu
+                desempenho será avaliado e, em até 48 horas após teres
+                concluído, receberás um e-mail com o teu resultado, indicando se
+                avanças ou não para a fase seguinte. 3. Check-in: Se fores
+                aprovado nos jogos, o próximo passo é a sessão de Check-In,
+                realizada nas instalações da 42 Luanda. Esta sessão, tem dois
+                objetivos principais: Verificar a tua identidade de forma
+                presencial - Apenas quem comparecer ao Check-in para esta
+                verificação e participar da sessão explicativa será promovido a
+                recruta, e poderá participar da piscina. Apresentar-te a
+                dinâmica da Piscina, fazendo-te perceber a importância de dares
+                o teu máximo e familiarizar-te com as regras da 42 Luanda. 4.
+                Piscina: Se triunfares nos jogos de lógica, completares o teu
+                check-in e te familiarizares com as regras da 42 Luanda, serás
+                convidado a participar na "Piscina". Trata-se de um periodo de
+                introdução aos fundamentos de programação onde vais aprender
+                noções básicas de como “ter controlo” do computador. A piscina
+                tem duração de cerca de um mês. Na Piscina, vais adquirir os
+                teus primeiros conhecimentos em programação e trabalhar em
+                projectos práticos. O objetivo é ver como te adaptas à pressão,
+                como trabalhas em equipa e como enfrentas desafios e se tens o
+                que é necessário para entregar os trabalhos nos prazos
+                definidos. Não precisas de qualquer experiência prévia em
+                programação para participar. Importante é tentar! 5. Admissão:
+                No final da Piscina, os participantes são avaliados com base na
+                sua dedicação, progresso, habilidades de trabalho em equipa e
+                capacidade de aprender de forma autónoma. Se fores bem
+                sucedido(a), serás convidado(a) a integrar a 42 Luanda como
+                aprendiz de programação a tempo inteiro. Boa sorte!
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid mt-10 paisagem-tablet:px-4 px-0 grid-cols-1 retrato-tablet:grid-cols-2 gap-4"
+          >
+            <div class="border border-zinc-900 p-5 rounded-2xl">
+              <header>
+                <h6 class="font-medium text-white">./root</h6>
+              </header>
+              <p class="text-zinc-200 text-[15px] pt-5">
+                O método de aprendizagem da 42 Luanda é presencial. Tens de
+                estar em contacto directo com outros estudantes, é o que
+                chamamos de aprendizagem entre pares. Cada um contribui e, todos
+                através da troca de conhecimentos avançam.
+              </p>
+            </div>
+            <div class="border border-zinc-900 p-5 rounded-2xl">
+              <header>
+                <h6 class="font-medium text-white">./root</h6>
+              </header>
+              <p class="text-zinc-200 text-[15px] pt-5">
+                Se te empenhares a estudar 40 horas por semana, ao fim de 16
+                meses terás o <strong>Certificado Human Coder</strong> .
+                Transformar-te-ás num programador, apto a lidar de forma
+                autónoma, criativa e colaborativa com problemas complexos. Ao
+                aprofundar os estudos, conseguirás alcançar níveis superiores e
+                estarás apto para abordar projectos de maior complexidade (entre
+                3 a 5 anos de estudo).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="py-4 px-8 mt-28"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
+      <div
+        class="w-full flex paisagem-tablet:gap-0 gap-5 items-center paisagem-tablet:flex-row flex-col justify-center paisagem-tablet:justify-between"
+      >
+        <div>
+          <img
+            src="./assets/img/logotype-42-white.png"
+            class="w-28"
+            alt="imagem-logotipo-42"
+          />
+        </div>
+        <div>
+          <a
+            href="emailto:info@42luanda.com"
+            class="text-zinc-200 hover:text-white"
+            >info@42luanda.com</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <a
+            href="https://www.facebook.com/42luanda/"
+            class="w-10 text-white hover:text-black hover:bg-white flex items-center justify-center border border-zinc-900 rounded-full h-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-facebook size-5 transition-all"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://www.instagram.com/42luanda/"
+            class="w-10 text-white hover:text-black hover:bg-white flex items-center justify-center border border-zinc-900 rounded-full h-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-instagram size-5 transition-all"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="pt-5 flex paisagem-tablet:flex-row flex-col justify-center paisagem-tablet:justify-between paisagem-tablet:items-center"
+      >
+        <div class="paisagem-tablet:text-start text-center">
+          <p class="text-[15px] font-medium text-zinc-200">
+            ISPTEC, Edifício dos Laboratórios Profissionalizantes, Piso 2
+          </p>
+          <p
+            class="text-[15px] paisagem-tablet:text-start font-medium text-center text-zinc-200"
+          >
+            Avenida de Talatona
+          </p>
+        </div>
+        <div class="paisagem-tablet:text-end text-center">
+          <p class="text-[15px] font-medium text-zinc-200">
+            Rua Pinheiro Furtado, casa 3
+          </p>
+          <p class="text-[15px] font-medium text-zinc-200">
+            Cidade Alta, Ingombota, Luanda - Angola
+          </p>
+          <p class="text-[15px] font-medium text-zinc-100">NIF: 5000281107</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- OFFCANVAS -->
+    <aside class="w-full hidden h-screen fixed top-0 left-0 aside_off z-40">
+      <div
+        class="off_canvas disable retrato-tablet:w-96 w-full shadow-lg p-6 h-full bg-zinc-950 fixed right-0 top-0"
+      >
+        <header class="flex w-full items-center justify-between">
+          <button
+          id="closeOffCanvas"
+            class="flex transition-all hover:bg-cyan-600 text-white justify-center items-center w-9 h-9 rounded-full bg-zinc-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <h6 class="font-medium text-zinc-100">Menu</h6>
+        </header>
+
+        <nav class="mt-10 px-3">
+          <ul class="flex flex-col space-y-6" id="offCanvas_list">
+            <li>
+              <a
+                href="#inicio"
+                class="font-medium flex border-b border-zinc-900 justify-between text-white py-3 transition-all hover:border-cyan-500 hover:text-cyan-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+                Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="#topicos"
+                class="font-medium flex border-b border-zinc-900 justify-between text-white py-3 transition-all hover:border-cyan-500 hover:text-cyan-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25"
+                  />
+                </svg>
+
+                Tópicos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#curriculum"
+                class="font-medium flex border-b justify-between py-3 transition-all border-zinc-900 text-white hover:border-cyan-500 hover:text-cyan-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                  />
+                </svg>
+                Curriculum</a
+              >
+            </li>
+            <li>
+              <a
+                href="#feedback"
+                class="font-medium flex border-b justify-between py-3 transition-all text-white border-zinc-900 hover:border-cyan-500 hover:text-cyan-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
+                  />
+                </svg>
+                Feedback</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="font-medium flex border-b justify-between py-3 transition-all text-white border-zinc-900 hover:border-cyan-500 hover:text-cyan-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+                  />
+                </svg>
+                FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="./src/login.html"
+                class="block bg-white text-black font-semibold py-3 hover:bg-zinc-300 rounded-lg text-center transition-all"
+                >Entrar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <script src="./assets/js/dark.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CUSTOMIZED -->
+  </body>
+</html>

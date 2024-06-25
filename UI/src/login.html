@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TAILWIND CUSTOMIZED -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/tailwind.js"></script>
+    <!-- PAGEDONE -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>42 Luanda - UI</title>
+  </head>
+  <body>
+    <main class="w-full h-screen paisagem-tablet:mt-0">
+      <div class="h-full w-full" id="image_card">
+        <div
+          class="w-full h-full retrato-tablet:flex retrato-tablet:pt-0 pt-10 items-center px-5 justify-center"
+          id="blur"
+        >
+          <div class="max-w-[31rem] w-full m-auto">
+            <header
+              class="text-center space-y-3"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="../assets/img/logotype-42-white.png"
+                class="w-32 mb-2 m-auto"
+                alt="42-logotype"
+              />
+              <small class="mt-5 text-white"
+                >A Segurança dos seus dados é nossa Prioridade!</small
+              >
+            </header>
+            <form
+              class="w-full mt-12"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="w-full grid grid-cols-1 gap-5">
+                <div class="input_group w-full space-y-3">
+                  <label for="login_email" class="px-3 font-medium text-white"
+                    >Login ou email</label
+                  >
+                  <div
+                    class="flex px-3 transition-all border-zinc-200 focus-within:ring-[rgba(0,0,0,0.2)] focus-within:ring-4 bg-[rgba(0,0,0,0.4)] font-medium rounded-lg items-center gap-2"
+                  >
+                    <input
+                      type="text"
+                      name="login_email"
+                      id="login_email"
+                      class="py-3 w-full placeholder:text-zinc-300 text-white bg-transparent outline-none ps-1"
+                      placeholder="Insira seu Login ou Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="input_group w-full space-y-3">
+                  <label for="pass" class="px-3 font-medium text-white"
+                    >Palavra-Chave</label
+                  >
+                  <div
+                    class="flex px-3 transition-all border-zinc-200 focus-within:ring-[rgba(0,0,0,0.2)] focus-within:ring-4 font-medium bg-[rgba(0,0,0,0.4)] rounded-lg items-center gap-2"
+                  >
+                    <input
+                      type="password"
+                      name="pass"
+                      id="pass"
+                      class="py-3 w-full placeholder:text-zinc-300 text-white bg-transparent outline-none ps-1"
+                      placeholder="***************"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 ps-5">
+                  <input type="checkbox" name="see_pass" id="see_pass" />
+                  <label
+                    for="see_pass"
+                    class="text-white text-[15px] select-none"
+                    >Mostrar Password</label
+                  >
+                </div>
+                <div class="w-full">
+                  <button
+                    class="w-full transition-all bg-[#1d9982] block py-3 hover:bg-[#1fad93] text-white font-semibold rounded-md"
+                  >
+                    Entrar
+                  </button>
+                </div>
+                <div
+                  class="flex items-center flex-col justify-center space-y-2"
+                >
+                  <a
+                    href="#"
+                    class="text-white text-[15px] font-medium hover:underline transition-all hover:text-zinc-300"
+                    >Esqueceu sua Password?</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-[15px] font-medium hover:underline transition-all hover:text-zinc-300"
+                    >Entrar como Staff</a
+                  >
+                  <a
+                    href="#"
+                    class="text-white text-[15px] font-medium hover:underline transition-all hover:text-zinc-300"
+                    >Leia nossos Termos e Condições</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CUSTOMIZED -->
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
